@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Resonance: Dynamic Menu",
+  "description": "Analyze page.",
+  "version": "0.1",
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+   "content_scripts": [{
+     "js": ["jquery.min.js", "popup.js"],
+     "matches": ["http://*/*", "https://*/*"]
+   }],
+  "permissions": [
+    "activeTab"
+  ]
+}
